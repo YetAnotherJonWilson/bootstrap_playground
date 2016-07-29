@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css" charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <div class="container">
 
     <div class="row">
@@ -18,43 +18,60 @@
       <p class="text-muted">This is some text inside the header.</p>
     </header>
     </div>
-<div class="row">
-  <div class="col-lg-3 col-md-3 col-sm-12 col-es-12 bg-info">Column 1</div>
-  <div class="col-lg-6 col-md-6 col-sm-12 col-es-12">
-    <p class="bg-primary">Column 2</p>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Rating</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="success">
-          <td>17</td>
-          <td>The very first thing</td>
-          <td>94</td>
-        </tr>
-        <tr class="danger">
-          <td>26</td>
-          <td>Numbered two</td>
-          <td>88</td>
-        </tr>
-        <tr class="info">
-          <td>45</td>
-          <td>What's on third</td>
-          <td>77</td>
-        </tr>
-        <tr class="warning">
-          <td>14</td>
-          <td>Home run</td>
-          <td>80</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="col-lg-3 col-md-3 col-sm-12 col-es-12 bg-info">Column 3</div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-es-12 bg-info" id="column-sides-top"></div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-es-12" id="column-2-top">
+      <div class="visible-lg text-info">Large Device</div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="success">
+            <td>17</td>
+            <td>The very first thing</td>
+            <td>94</td>
+          </tr>
+          <tr class="danger">
+            <td>26</td>
+            <td>Numbered two</td>
+            <td>88</td>
+          </tr>
+          <tr class="info">
+            <td>45</td>
+            <td>What's on third</td>
+            <td>77</td>
+          </tr>
+          <tr class="warning">
+            <td>14</td>
+            <td>Home run</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table>
+      <form class="jumbotron form">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username"/>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password">
+        </div>
+        <div>
+          <label for="file">Upload a picture</label>
+          <input type="file" id="file">
+        </div>
+        <div class="btn btn-primary">
+        <input type="submit">
+      </div>
+      </form>
+    </div>
+  <div class="col-lg-3 col-md-3 col-sm-12 col-es-12 bg-info" id="column-sides-top"></div>
 </div>
 <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 col-es-12 text-center">Footer</div>
