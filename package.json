@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-playground",
+  "version": "1.0.0",
+  "description": "a place to play with bootstrap",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonwilsoncomedy/bootstrap_playground.git"
+  },
+  "author": "Jon Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonwilsoncomedy/bootstrap_playground/issues"
+  },
+  "homepage": "https://github.com/jonwilsoncomedy/bootstrap_playground#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
