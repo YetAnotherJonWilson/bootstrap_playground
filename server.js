@@ -3,6 +3,8 @@ var app = express();
 //var router = require('express').Router();
 var path = require('path');
 
+app.use(express.static('public'));
+
 app.get('/', function(request, response){
   response.sendFile(path.join(__dirname, '/index.html'));
 });
